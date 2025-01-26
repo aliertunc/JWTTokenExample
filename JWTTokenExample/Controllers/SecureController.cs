@@ -7,7 +7,7 @@ public class SecureController : ControllerBase
 {
     [Authorize(Roles = "Admin")]
     [HttpPost("admin/post")]
-    public IActionResult AdminPost()
+    public IActionResult AdminPost() 
     {
         return Ok("Admin tarafından post işlemi başarılı!");
     }

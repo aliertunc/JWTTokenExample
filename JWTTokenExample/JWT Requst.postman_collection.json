@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "6ae2fa9e-edf3-43de-997c-3f3f2de73d34",
+		"name": "JWT Requst",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14678282"
+	},
+	"item": [
+		{
+			"name": "Admin auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Role\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin admin/post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlRlc3RVc2VyIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzM3OTIxMzIyLCJleHAiOjE3Mzc5MjQ5MjIsImlhdCI6MTczNzkyMTMyMiwiaXNzIjoieW91cmFwcF9Jc3N1ZXJfMTIzNDUhISEqeW91cmFwcF9Jc3N1ZXJfMTIzNDUhISEqIiwiYXVkIjoieW91cnVzZXJzXzEyMzQtLT8qKkF1ZGllbmNleW91cnVzZXJzXzEyMzQtLT8qKkF1ZGllbmNlIn0.UBCW2X0gZ8TCVnNDzRKM5c5r5Qrjzl4oYhbhd-R2c1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/admin/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"admin",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin admin/refresh-token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlRlc3RVc2VyIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzM3OTIxMzIyLCJleHAiOjE3Mzc5MjQ5MjIsImlhdCI6MTczNzkyMTMyMiwiaXNzIjoieW91cmFwcF9Jc3N1ZXJfMTIzNDUhISEqeW91cmFwcF9Jc3N1ZXJfMTIzNDUhISEqIiwiYXVkIjoieW91cnVzZXJzXzEyMzQtLT8qKkF1ZGllbmNleW91cnVzZXJzXzEyMzQtLT8qKkF1ZGllbmNlIn0.UBCW2X0gZ8TCVnNDzRKM5c5r5Qrjzl4oYhbhd-R2c1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/admin/refresh-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"admin",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Role\": \"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User user/post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlRlc3RVc2VyIiwicm9sZSI6IlVzZXIiLCJuYmYiOjE3Mzc5MTc4NzQsImV4cCI6MTczNzkyMTQ3NCwiaWF0IjoxNzM3OTE3ODc0LCJpc3MiOiJ5b3VyYXBwIiwiYXVkIjoieW91cnVzZXJzIn0.uE9lJnxV6CDVwoynct595EDJuD_m-2YtMMVuJ7LO-BQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/user/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
